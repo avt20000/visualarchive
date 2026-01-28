@@ -1,0 +1,85 @@
+<head>
+    <title>Visual Archive 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/x-icon" href="./img/cat.png">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,
+wght@0,300..900;1,300..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" 
+rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>visual archive 1//ars visual culture 2026</h1>
+      <h2>my work</h2>
+    <div class="container1">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p1.jpg" alt="core 3 independent project: your life in your pocket (2025)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p2.jpg" alt="independent work: anna karenina book poster (2024)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p3.png" alt="integrated studio 1 book project: green-wood cemetery (2023)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p4.jpg" alt="experimental children's book: zucker takes the train (2024)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p5.jpg" alt="core 2 typography home book: heimweh (2025)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p6.jpg" alt="integrated studio 2 project: bite by bite (2024)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p7.jpg" alt="integrated studio 2 project: urban symphony (2024)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p8.jpg" alt="experimental comics documentary picture story: bar fly day (2025)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p9.jpeg" alt="independent work: ursus americanus aaron (2024)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p10.jpeg" alt="independent work: this one dream i had about u (2024)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p11.jpeg" alt="independent work: tu ne m'aime pas zine (2024)" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/p12.jpg" alt="ULEC post-human futures: action card design (2024)" style="width:100%;max-width:300px">
+    </div>
+    <h2>work i like</h2>
+    <div class="container1">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o1.jpg" alt="rocio egio's editorial illustrations" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o2.jpg" alt="niklas apfel's booklet designs for ufa Fabrik Berlin" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o3.jpg" alt="valeria mogilevich's Guide to Building Power booklet for the Debt Collective" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o4.jpg" alt="bruna kater's dom quixote [don quixote] cover design" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o5.jpg" alt="elisabetta vedovato's portugal 2022 travel journal" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o6.jpg" alt="jacopo rosati's smeg lavazza illustration" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o7.jpg" alt="felipe lampejo and rita davis' screenprint poster for mostra cine cidade" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o8.jpg" alt="studio oker's okse poster" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o9.jpg" alt="chris ware's building stories (graphic novel )" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o10.jpg" alt="dash shaw's blurry (graphic novel )" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o11.png" alt="ulli lust's how i tried to be a good person (graphic novel )" style="width:100%;max-width:300px">
+    <img onclick="makeBig(this)" class="myImg photo" src="./img/o12.jpg" alt="michelangelo's last judgement" style="width:100%;max-width:300px">
+
+      </div>
+          <div class="footer">this has been another great website by the always innovative delightfully fresca but never fresa avt/copyright 2026/all rights considered blah blah blah</div>
+    </div>
+
+  
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+   
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    
+    function makeBig(theimage) {
+      console.log(theimage)
+     
+      modal.style.display = "block";
+      modalImg.src = theimage.src;
+      captionText.innerHTML = theimage.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+       
+</body>
